@@ -12,8 +12,10 @@ export default function App() {
     <TailwindProvider>
       <View style={styles.container}>
         <StatusBar style="auto" />
-        <Text style={{ marginBottom: 24 }}>Styled component keeys mounting:</Text>
+        <Text style={{ marginBottom: 24 }}>Styled component with className keeps mounting:</Text>
         <TestComponent className="bg-white" />
+        <Text style={{ marginTop: 24, marginBottom: 24 }}>Styled component without className does not:</Text>
+        <TestComponent />
       </View>
     </TailwindProvider>
   );
