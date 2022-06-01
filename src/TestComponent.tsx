@@ -4,7 +4,7 @@ import { styled } from "tailwindcss-react-native";
 
 let num = 0;
 
-export const TestComponent = styled(memo(function TestComponent() {
+export const TestComponent = memo(function TestComponent(props: { className?: string }) {
   useEffect(() => {
     console.log("Mount");
     num++;
@@ -16,4 +16,4 @@ export const TestComponent = styled(memo(function TestComponent() {
       <Text>Re-mounted {num} times</Text>
     </View>
   );
-}));
+});

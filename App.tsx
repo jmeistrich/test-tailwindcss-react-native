@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function App() {
   const [state, setState] = useState(false);
-  useInterval(() => setState((s) => !s), 1500);
+  useInterval(() => setState((s) => !s), 500);
   return (
     <TailwindProvider>
       <View style={styles.container}>
